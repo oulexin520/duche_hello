@@ -1,0 +1,41 @@
+<view>
+  <text>选择路况类型、地址、填写路况信息即可发布</text>
+    <view class="weui-cells weui-cells_after-title">
+        <radio-group bindchange="radioChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <radio value="{{item.value}}" checked="true"/>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </radio-group>
+    </view>
+    <view class="choice">
+      <text class="text1">点击打开地图选择地址</text>
+      <image src="../../img/dd.png"></image>
+      <text class="text2" bindtap="chooseAddressFn">您选择的地址:</text>
+    </view>
+</view>
+<textarea id="text" placeholder="你选择的地址" value="{{address}}"></textarea>
+<text class="tex">填写路况信息</text>
+<textarea name="" id="txt" cols="30" rows="10" placeholder=" 请输入或者语音识别那个路段、收费站、服务区发生了什么，最新情况" value="{{yuyindata}}">
+</textarea>
+<view class="tu">
+  <text class="sc">上传附件</text>
+  <image src="../../img/yuyin.png" class="img" bindtouchstart="touchStart" bindtouchend="touchEnd"></image>
+  <text wx:if="{{recordState==false}}" class="sb">长按识别</text>
+  <text wx:else class="sb">识别中...</text>
+  <text class="num">0-500</text>
+</view>
+  <view class="zx">
+    <image src="../../img/zx.png" bindtap="setImgsFn" class="img1"></image>
+    <block wx:for="{{imgs}}" wx:key="index">
+    <image src="{{item}}" style="width:150rpx;height:150rpx;"></image>
+</block>
+  </view>
+<view class="check">
+  <radio></radio><text>订阅消息通知</text>
+</view>
+<view class="tj">
+  <button>提交</button>
+</view>

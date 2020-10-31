@@ -1,0 +1,34 @@
+<!-- 
+回忆：不同地图的经度纬度有误差/换句话说有自己的算法
+思考：如何获取经度纬度呢？
+百度：腾讯地图获取经度纬度/坐标拾取
+   http://lbs.qq.com/tool/getpoint/
+   百度地图获取经度纬度/坐标拾取
+   高德地图获取经度纬度/坐标拾取
+缩放：3-20
+-->
+<map 
+class="map" 
+longitude="118.73145"
+latitude="32.00335"
+scale="{{scale}}"
+show-compass="true"
+show-scale="true"
+enable-overlooking="true"
+show-location="true"
+>
+<!-- 地图放大和缩小 缩放控件-->
+<cover-view class="scale-control">
+<button class="add" bindtap="setScalFn" data-type="add">+</button>
+<button class="del" bindtap="setScalFn" data-type="del">-</button>
+</cover-view>
+<!-- 地图定位 定位控件 -->
+<cover-view class="scale-position">
+<cover-image src="../../img/dw.png" bindtap="setPositionFn"></cover-image>
+</cover-view>
+<!-- 导航控件  -->
+<cover-view class="navs-control" bindtap="showMapFn">
+     <cover-image src="../../img/dh.png"></cover-image>
+</cover-view>
+
+</map>

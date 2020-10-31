@@ -1,0 +1,37 @@
+<view class="container" >
+  <view class="header">
+     <image src="../../img/1.jpg"></image>
+      <view>
+        <text>阿白</text>
+        <view class="txt">#管制#上海迪士尼现在实行交通管制请绕行</view>
+      </view>
+  </view>
+  <view class="img">
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <image src="../../img/22.jpg"></image>
+          <view>上海市浦东新区申迪西路763号</view>
+          <text class="text">2020-05-04 16:52:31</text>
+     </view>
+ 
+  <view class="header">
+     <image src="../../img/1.jpg"></image>
+      <view>
+        <text>阿白</text>
+        <view class="txt">#管制#上海迪士尼现在实行交通管制请绕行</view>
+      </view>
+  </view>
+  <view class="img">
+    <image src="../../img/22.jpg"></image>
+    <image src="../../img/22.jpg"></image>
+    <view>上海市闵行区申贵路1500号</view>
+    <text class="text">2020-05-04 16:47:14</text>
+  </view>
+  <view class="footer">
+    <image src="../../img/11.png" bindtap="goInformation" ></image>
+  </view>
+</view>

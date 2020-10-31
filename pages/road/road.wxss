@@ -1,0 +1,40 @@
+.container{
+  /* display: flex; */
+  margin: 0;
+  padding:0;
+  position: relative;
+}
+.container .header{
+  display: flex;
+/* border-bottom: 1px solid #ccc; */
+}
+.container image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+}
+.container .img {
+  width:80%;
+  margin-left: 100rpx;
+  /* border-bottom: 1rpx solid #ccc; */
+}
+.container .img image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 15rpx;
+}
+.container .img .text{
+  color: #ccc;
+  font-size: 30rpx;
+  line-height:50rpx;
+}
+.container .footer{
+background: #ccc;
+width: 100%;
+position: relative; 
+border-bottom: 1rpx solid #ccc;
+}
+.container .footer image{
+  position: absolute;
+  right: 20rpx;
+}

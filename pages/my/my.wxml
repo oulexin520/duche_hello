@@ -1,0 +1,34 @@
+<view>
+  <view class="header">
+     <image src="../../img/1.jpg"></image>雅丽
+  </view>
+  <view class="main">
+    <view class="tm">
+      <button  plain="true">群聊</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+    <view class="tm">
+      <button open-type="share" plain="true">分享</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+    <view class="tm">
+      <button  plain="true" bindtap="saoFn">扫一扫</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+    <view class="tm">
+      <button  plain="true">关于</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+    <view class="tm">
+      <button  plain="true" open-type="feedback">意见反馈</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+    <view class="tm">
+      <button  plain="true" open-type="contact" bindcontact="handleContact">联系我们</button>
+      <image src="../../img/dy.png"></image>
+    </view>
+  </view>
+  <view class="footer">
+   
+  </view>
+</view>
